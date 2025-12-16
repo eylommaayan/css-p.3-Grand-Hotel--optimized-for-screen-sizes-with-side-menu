@@ -86,6 +86,7 @@ body {
     justify-content: space-between;
     align-items: center;
     transition: left .8s cubic-bezier(1, 0, 0, 1);
+      z-index: 6;
 }
 
 .navigation-heading {
@@ -221,6 +222,8 @@ body {
     height: 100vh;
     background: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)), url(../img/header-1.jpg) center no-repeat;
     background-size: cover;
+      position: relative;
+  z-index: 5;
 }
 
 .brand {
@@ -357,7 +360,8 @@ body {
 
 .about-us-images {
     flex: 1 1;
-    position: relative;
+    position: relative; /* כבר יש אצלך - טוב */
+  overflow: hidden;   /* זה ימנע מהתמונות לצאת ולהיכנס ל-header */
 }
 
 .image {
@@ -754,6 +758,8 @@ body {
     }
 }
 
+
+/* 
 @media(max-width: 500px) {
     .navigation {
         width: 28rem;
@@ -847,7 +853,7 @@ body {
     .image-wrapper {
         width: 9rem;
     }
-}
+} */
 
 
 
